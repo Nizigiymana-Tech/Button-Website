@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+  height: 75vh;
+}
+
+.container:hover {
+  cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+h1 {
+  text-align: center;
+}
