@@ -17,7 +17,7 @@ body {
   cursor: auto;
 }
 
-.clickable:hover {
+.button:hover {
   cursor: pointer
 }
 
