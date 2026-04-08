@@ -7,7 +7,7 @@ const ClickText = document.getElementById("ClickText")
 button.addEventListener("click", OnClicked)
 
 function updateClickText() {
-    ClickText.textContent = "Clicks:"
+    ClickText.textContent = "Amount of Clicks: " + Clicks
 }
 
 function OnClicked() {
@@ -18,6 +18,9 @@ function OnClicked() {
     debounce = true
     
     button.src = "Images/pressed.png"
+    Clicks += 1
+
+    print(Clicks)
 
     setTimeout(
         () => {button.src = "Images/button.png"},
