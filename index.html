@@ -3,18 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Styles/styles.css">
     <title>Click The Button.</title>
 </head>
 <body>
     <h2>Click The Button</h2>
-    <h1 id="ClickText">Amount of Clicks: 0</h2>
+    <h1 id="ClickText">Amount of Clicks: </h2>
 
     <div class="container">
-        <img src="Images/button.png" alt="Button" id="button">
+        <img class="clickable" src="Images/button.png" alt="Button" id="button">
     </div>
 
-    <script type="module" src="index.js"></script>
-    <script type="module" src="Modules/data.js"></script>
+    <div>
+        <button class="shopButton" id="Shop">Shop</button>
+    </div>
+
+    <div class="shopContainer">
+        <iframe src="Frames/ShopFrame.html" frameborder="1"></iframe>
+    </div>
+
+    <script type="module" src="Systems/click.js"></script>
 </body>
 </html>

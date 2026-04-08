@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+  height: 75vh;
+}
+
+.shopContainer {
+  width: 100px;
+  height: 50px;
+  margin: auto;
+  
+}
+
+body {
+  background-color: lightblue;
+  cursor: auto;
+}
+
+.clickable:hover {
+  cursor: pointers
+}
+
+.shopButton {
+  width: 200px;
+  height: 65px;
+  font-size: 50px;
+  color: white;
+  border-radius: 10px;
+  border-color: white;
+  background-color: black;
+}
+
+.shopButton:hover {
+  cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+h1 {
+  text-align: center;
+}

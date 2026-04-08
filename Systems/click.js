@@ -1,4 +1,4 @@
-import { addClick, returnClicks } from './Modules/data.js'
+import { addClick, returnClicks } from '../Modules/data.js'
 
 const button = document.getElementById("button")
 const clickText = document.getElementById("ClickText")
