@@ -1,14 +1,17 @@
-const button = document.getElementById("button")
-debounce = false
+import { addClick, returnClicks } from './Modules/data.js'
 
-Clicks = 0
-const ClickText = document.getElementById("ClickText")
+const button = document.getElementById("button")
+const clickText = document.getElementById("ClickText")
+
+let debounce = false
 
 button.addEventListener("click", OnClicked)
 
 function updateClickText() {
-    ClickText.textContent = "Amount of Clicks: " + Clicks
+    clickText.textContent = "Amount of Clicks: " + returnClicks()
 }
+
+updateClickText()
 
 function OnClicked() {
     if (debounce) {
@@ -18,9 +21,11 @@ function OnClicked() {
     debounce = true
     
     button.src = "Images/pressed.png"
-    Clicks += 1
+    
+    addClick(1)
+    updateClickText()
 
-    print(Clicks)
+    console.log(returnClicks)
 
     setTimeout(
         () => {button.src = "Images/button.png"},
