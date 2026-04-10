@@ -7,21 +7,22 @@
     <title>Click The Button.</title>
 </head>
 <body>
-    <h2>Click The Button</h2>
-    <h1 id="ClickText">Amount of Clicks: </h2>
+    <h1 class="centerText" id="Title">Click The Button</h2>
+    <h3 class="centerText" id="ClickText">Amount of Clicks: </h2>
 
     <div class="container">
-        <img src="Images/button.png" alt="Button" id="button">
+        <img class="mouseHover" src="Images/button.png" alt="Button" id="button">
     </div>
 
     <div>
-        <button class="shopButton" id="Shop">Shop</button>
+        <button class="mouseHover" id="shopButton">Shop</button>
     </div>
 
-    <div class="shopContainer">
-        <iframe src="Frames/ShopFrame.html" frameborder="1"></iframe>
+    <div class="shopContainer" id="shopFrame">
+        <h1 class="centerText" id="shopTitle">Shop!</h1>
     </div>
 
     <script type="module" src="Systems/click.js"></script>
+    <script src="Systems/shop.js"></script>
 </body>
 </html>
